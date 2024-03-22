@@ -16,14 +16,15 @@ int main()
     int age;
     cout<<"\nEnter the age: ";
     cin>>age;
-
     if(age<18)
     cout<<"\nnot eligible for job";
-    else if(age<54)
-    cout<<"\neligible for job";
-    if(age>=55 and age<=57)
-    cout<<"\neligible for job, but retirement soon.";
-    if(age>57)
+    
+    else if(age<=57)
+            cout<<"\neligible for job";
+        if(age>=55){
+            cout<<"\n, but retirement soon.";
+        }
+    else
     cout<<"\nretirement time";
     
 
